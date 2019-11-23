@@ -3,7 +3,18 @@
         <v-container grid-list-xs style="margin-top: -135px">
         <v-layout row wrap justify-center>
 
-            <v-flex xs12 lg10 xl8>
+            <v-flex xs12 lg12 xl3 class="hidden-lg-and-down" style="margin-top: 135px">
+                <v-card flat style="background: transparent !important">
+                    <!-- <v-card-title primary-title>
+                        Ayo cari barang yang<br/>ingin kamu pinjam
+                    </v-card-title> -->
+                    <v-card-text>
+                        <v-img width="100%" :src="require('@/js/assets/superhero-2.svg')"/>
+                    </v-card-text>
+                </v-card>
+            </v-flex>
+
+            <v-flex xs12 lg12 xl6>
             <v-card class="pa-5" outlined>
                 <v-card-title primary-title>
                     Info Peminjaman
@@ -170,6 +181,17 @@
                 </v-form>
                 </v-card-text>
             </v-card>
+            </v-flex>
+
+            <v-flex xs12 lg12 xl3 class="hidden-lg-and-down" style="margin-top: 135px">
+                <v-card flat style="background: transparent !important">
+                    <!-- <v-card-title primary-title>
+                        Ayo cari barang yang<br/>ingin kamu pinjam
+                    </v-card-title> -->
+                    <v-card-text>
+                        <v-img width="100%" :src="require('@/js/assets/superhero.svg')"/>
+                    </v-card-text>
+                </v-card>
             </v-flex>
 
             <br>

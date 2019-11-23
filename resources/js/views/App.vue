@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <appBar/>
+    <!-- <appBar/> -->
+    <navBar/>
     <Header :fullHeight="fullHeight" :title="title" :subtitle="subtitle"/>
     <v-content style="margin-bottom: 100px;">
       <router-view></router-view>
@@ -11,6 +12,7 @@
 
 <script>
 import appBar from '@/js/components/appBar.vue'
+import navBar from '@/js/components/navBar.vue'
 import Header from '@/js/components/header.vue'
 import Footer from '@/js/components/footer.vue'
 
@@ -18,6 +20,7 @@ export default {
   name: 'App',
   components: {
     appBar,
+    navBar,
     Header,
     Footer
   },

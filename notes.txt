@@ -1,0 +1,11 @@
+# For After Clone
+
+composer update
+npm install
+
+curl -s https://php-osx.liip.ch/install.sh | bash -s 7.2
+export PATH=/usr/local/php5/bin:$PATH
+
+cp .env.example .env
+php artisan key:generate
+chmod 777 -R  storage
