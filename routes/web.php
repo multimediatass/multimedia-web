@@ -14,4 +14,7 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::get('/api/tes', function () {
+    return ['tes' => 'Testing API...'];
+});
 Route::get('/{any}', 'SinglePageController@index')->where('any', '.*');
